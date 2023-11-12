@@ -1,5 +1,6 @@
 from main import process_rooms, Room, LayoutLine
 
+
 def test_process_rooms():
     plan = """
     +---------+--------+
@@ -7,7 +8,6 @@ def test_process_rooms():
     |  W      |   C    |
     |  S      /   X    |
     +--------+--------+"""
-    
 
     rooms = process_rooms(plan)
     assert len(rooms) == 2
@@ -20,6 +20,7 @@ def test_process_rooms():
 
     # X doesn't exist and shouldn't be processed
     assert rooms[1].chairs.get("X") is None
+
 
 def test_is_connected():
     line0 = LayoutLine("", 1, 1, 10)
