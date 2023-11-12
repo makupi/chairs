@@ -16,3 +16,9 @@ chairs --plan plan.txt
 ```
 
 > `--plan` defaults to `plan.txt` and can be omitted
+
+
+### Assumed Restrictions
+
+A plan may only use `+-` for horizontal lines and `+|\/` for vertical lines.
+Room names must be written in parenthesis and lowercase like `(kitchen)`.
