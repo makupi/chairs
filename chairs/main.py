@@ -60,6 +60,7 @@ class Room:
         return chairs
 
     def is_connected(self, line: LayoutLine) -> bool:
+        """Check if line is connected vertically to this room"""
         for l in self.layout:
             if l.y == line.y:
                 return False  # we already have a line at this y coord

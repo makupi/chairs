@@ -12,6 +12,8 @@ click = "^8.1.7"
 [tool.poetry.scripts]
 chairs = "chairs.main:main"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
 
 [build-system]
 requires = ["poetry-core"]
