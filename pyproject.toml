@@ -9,6 +9,9 @@ readme = "README.md"
 python = "^3.11"
 click = "^8.1.7"
 
+[tool.poetry.scripts]
+chairs = "chairs.main:main"
+
 
 [build-system]
 requires = ["poetry-core"]
